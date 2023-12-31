@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,700&family=Nabla&family=Poppins:ital,wght@0,100;0,200;0,900;1,100&family=Rubik+Broken+Fax&family=Tektur:wght@600;700;800&family=Young+Serif&display=swap');
+
+body{
+    background: rgb(228,233,102);
+    background: linear-gradient(90deg, rgba(188,142,217,1) 0%, rgba(251,33,250,1) 52%, rgba(228,233,102,1) 100%);
+        color: #efebeb;
+}
+
+
+
+   h1 {
+    font-family: "Poppins",sans-serif;
+        text-align: left; 
+    margin-top: 15vh;
+    margin-left: 25vh;
+    font-size: 100px;
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: fadeInUpH1 2.5s ease-out 0.5s forwards; 
+}
+
+@keyframes fadeInUpH1 {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+h2 {
+    font-family: "Poppins",sans-serif;
+    text-align: left; 
+    margin-top: 5vh;
+    margin-left: 10vh;
+    font-size: 25px;
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: fadeInUpH2 2.5s ease-out 1s forwards; 
+}
+
+@keyframes fadeInUpH2 {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+
+nav {
+
+
+    overflow: auto;
+}
+
+nav a {
+    
+    float: left;
+    display: block;
+    color: blueviolet;
+    text-align: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px 20px;
+    text-decoration: double;
+}
+
+nav a:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.1);
+}
+
+.animated-image {
+    position: absolute; 
+    top: 50%; 
+    right: 20px; 
+    transform: translateY(-50%);
+    width: fit-content; 
+    height: 100vh; 
+    opacity: 0; 
+    animation: fadeInUpImage 2.5s ease-out forwards; 
+}
+
+@keyframes fadeInUpImage {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%) translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-50%); 
+    }
+}

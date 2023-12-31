@@ -1,0 +1,215 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,700&family=Nabla&family=Poppins:ital,wght@0,100;0,200;0,900;1,100&family=Rubik+Broken+Fax&family=Tektur:wght@600;700;800&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background: rgb(226, 83, 238);
+    background: linear-gradient(90deg, rgba(226, 83, 238, 1) 23%, rgba(231, 219, 47, 1) 75%);
+}
+nav {
+    background: rgb(122,233,236);
+    background: linear-gradient(90deg, rgba(122,233,236,1) 18%, rgba(167,110,189,1) 88%);
+    overflow: auto;
+    margin-bottom: 70px; 
+}
+nav a {
+    color: blueviolet;
+    float: left;
+    display: block;
+    /* color: whitesmoke; */
+    text-align: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px 20px;
+    text-decoration: double;
+}
+nav a:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.1);
+}
+header {
+    color: white;
+    text-align: left;
+    /* padding: 1em 0; */
+}
+ h1 {
+    text-align: left; 
+    padding : 50px;
+    font-size: 60px;
+    opacity: 0;
+    transform: translateY(20px);
+   
+    animation: fadeInUpH1 2.5s ease-out 0.5s forwards; 
+    margin-top: 50px; 
+}
+@keyframes fadeInUpH1 {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+h2 {
+    color: aliceblue;
+    text-align: right; 
+    margin-right: 29vh;
+    font-size: 40px;
+    padding-right: 50px;
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: fadeInUpH2 2.5s ease-out 1s forwards; 
+}
+
+@keyframes fadeInUpH2 {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+.container .column.left h2 {
+    color: aliceblue;
+    text-align: left; 
+   
+    margin-top: 5vh;
+    
+    padding-left: 50px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: fadeInUpH2 2.5s ease-out 1s forwards; 
+}
+
+@keyframes fadeInUpH2 {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+ 
+
+   .column {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 20px;
+ 
+      }
+  
+    
+      .left {
+        float: left;
+        height: 80vh;
+      }
+  
+      .right {
+        text-align: left;
+        float: right;
+        height: 80vh;
+        margin-bottom: 60px;
+        position: relative;
+        bottom: 55px;
+    }
+h3{
+    margin: 5px;
+}
+.container .column.right .skill{
+        list-style: none;
+        color: white;
+        width: 500px;
+        margin: 60px auto;
+       
+      }
+
+.container .column.right .skill li{
+
+    margin: 20px 0;
+    padding: 10px;
+}  
+
+.container .column.right .skill li .bar{
+    /* background: rgb(89,126,190);
+background: linear-gradient(90deg, rgba(89,126,190,1) 18%, rgba(216,1,252,1) 79%); */
+    display: block;
+    height: 20px;
+    border: 2px solid rgba(254, 253, 253, 0.963);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8 .25,1);
+}
+.container .column.right .skill li .bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.container .column.right .skill li .bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(90deg, rgba(89,126,190,1) 18%, rgba(216,1,252,1) 79%);
+}
+
+.container .column.right .skill .html{
+    width: 90%;
+    animation: html 3s;
+}
+
+.container .column.right .skill .css{
+    width: 70%;
+    animation: css 3s;
+}
+
+.container .column.right .skill .javascript{
+    width: 45%;
+    animation: javascript 3s;
+}
+
+.container .column.right .skill .content{
+    width: 60%;
+    animation: content 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+@keyframes content{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
